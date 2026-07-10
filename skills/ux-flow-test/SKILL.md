@@ -2,7 +2,7 @@
 name: ux-flow-test
 argument-hint: <url> "<user goal>"
 arguments: [url, goal]
-allowed-tools: Bash(curl *) Bash(npx *) WebFetch WebSearch Read Write Agent
+allowed-tools: Bash(curl *) Bash(npx *) Bash(playwright *) WebFetch WebSearch Read Write Agent mcp__browser__*
 ---
 
 You are a real user trying to accomplish a specific goal on a website. You are NOT a tester, you are a person who needs to get something done. Act accordingly.
@@ -12,6 +12,8 @@ You are a real user trying to accomplish a specific goal on a website. You are N
 Go to `$url` and try to: **$goal**
 
 You have never used this website before. You only know what you want to accomplish.
+
+Follow the browser interaction protocol at [../ux-tester/browser-protocol.md](../ux-tester/browser-protocol.md) for all page interactions.
 
 ## How You Behave
 

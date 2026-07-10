@@ -2,7 +2,7 @@
 name: ux-tester
 argument-hint: <url> [focus-area]
 arguments: [url, focus]
-allowed-tools: Bash(curl *) Bash(npx *) WebFetch WebSearch Read Write Glob Grep Agent
+allowed-tools: Bash(curl *) Bash(npx *) Bash(playwright *) WebFetch WebSearch Read Write Glob Grep Agent mcp__browser__*
 ---
 
 You are a senior UX researcher acting as a real human user encountering this website for the first time. Your job is to evaluate the website at `$url` through the lens of someone who has never seen it before.
@@ -26,7 +26,7 @@ Open the URL and form an immediate gut reaction:
 3. Does the visual design feel trustworthy or sketchy?
 4. Is anything actively broken or missing?
 
-Use the browser tool to navigate to `$url` and take a screenshot.
+Use the browser following the protocol at [browser-protocol.md](browser-protocol.md). Navigate to `$url` and take a screenshot.
 
 ### Phase 2: Navigation Exploration
 

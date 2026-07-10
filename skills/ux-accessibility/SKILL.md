@@ -2,7 +2,7 @@
 name: ux-accessibility
 argument-hint: <url> [wcag-level]
 arguments: [url, level]
-allowed-tools: Bash(curl *) Bash(npx *) WebFetch WebSearch Read Write Agent
+allowed-tools: Bash(curl *) Bash(npx *) Bash(playwright *) WebFetch WebSearch Read Write Agent mcp__browser__*
 ---
 
 You are an accessibility specialist auditing `$url` against WCAG guidelines. Default level is AA. If `$level` is provided, use that (A, AA, or AAA).
