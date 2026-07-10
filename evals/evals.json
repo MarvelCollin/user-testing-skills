@@ -1,0 +1,162 @@
+{
+  "version": "1.0",
+  "skills": {
+    "ux-tester": {
+      "cases": [
+        {
+          "id": "ux-tester-basic",
+          "input": "/ux-tester https://example.com",
+          "expected_sections": [
+            "Executive Summary",
+            "Scores Breakdown",
+            "Critical Issues",
+            "Top 3 Quick Wins"
+          ],
+          "expected_scores": {
+            "min_categories_scored": 8,
+            "score_range": [1, 10]
+          },
+          "expected_behavior": [
+            "takes_screenshots",
+            "navigates_multiple_pages",
+            "tests_interactive_elements",
+            "identifies_at_least_one_issue"
+          ]
+        },
+        {
+          "id": "ux-tester-focus-nav",
+          "input": "/ux-tester https://example.com nav",
+          "expected_sections": [
+            "Navigation & IA"
+          ],
+          "expected_behavior": [
+            "deep_dives_navigation",
+            "tests_breadcrumbs",
+            "tests_search",
+            "checks_3_click_rule"
+          ]
+        },
+        {
+          "id": "ux-tester-focus-mobile",
+          "input": "/ux-tester https://example.com mobile",
+          "expected_behavior": [
+            "tests_375px_viewport",
+            "tests_768px_viewport",
+            "checks_touch_targets",
+            "checks_horizontal_scroll",
+            "uses_aisha_persona"
+          ]
+        }
+      ]
+    },
+    "ux-flow-test": {
+      "cases": [
+        {
+          "id": "flow-test-signup",
+          "input": "/ux-flow-test https://example.com \"sign up for an account\"",
+          "expected_sections": [
+            "Flow Result",
+            "Step-by-Step Log",
+            "Friction Heatmap",
+            "Verdict"
+          ],
+          "expected_behavior": [
+            "records_see_think_do_result_feel",
+            "assigns_friction_scores",
+            "abandons_if_stuck_5_actions",
+            "uses_sarah_persona"
+          ]
+        },
+        {
+          "id": "flow-test-purchase",
+          "input": "/ux-flow-test https://example.com \"buy a product\"",
+          "expected_behavior": [
+            "uses_tom_persona",
+            "checks_pricing",
+            "checks_refund_policy",
+            "records_comparison_behavior"
+          ]
+        },
+        {
+          "id": "flow-test-abandoned",
+          "input": "/ux-flow-test https://httpstat.us/500 \"complete checkout\"",
+          "expected_behavior": [
+            "declares_flow_abandoned_or_broken",
+            "records_blocker",
+            "does_not_loop_infinitely"
+          ]
+        }
+      ]
+    },
+    "ux-accessibility": {
+      "cases": [
+        {
+          "id": "a11y-basic",
+          "input": "/ux-accessibility https://example.com",
+          "expected_sections": [
+            "Accessibility Score",
+            "WCAG Compliance Summary",
+            "Violations Found",
+            "Priority Fixes"
+          ],
+          "expected_behavior": [
+            "checks_alt_text",
+            "checks_contrast",
+            "checks_keyboard_nav",
+            "checks_heading_hierarchy",
+            "runs_automated_scan"
+          ]
+        },
+        {
+          "id": "a11y-aaa",
+          "input": "/ux-accessibility https://example.com AAA",
+          "expected_behavior": [
+            "applies_aaa_criteria",
+            "stricter_contrast_requirements",
+            "checks_sign_language_provisions"
+          ]
+        }
+      ]
+    },
+    "ux-compare": {
+      "cases": [
+        {
+          "id": "compare-basic",
+          "input": "/ux-compare https://github.com https://gitlab.com",
+          "expected_sections": [
+            "Head-to-Head Summary",
+            "Where Site A Wins",
+            "Where Site B Wins",
+            "Steal-Worthy Ideas",
+            "Verdict"
+          ],
+          "expected_behavior": [
+            "visits_both_sites",
+            "scores_both_sites",
+            "picks_winner_per_category",
+            "tests_same_tasks_on_both"
+          ]
+        }
+      ]
+    },
+    "ux-report": {
+      "cases": [
+        {
+          "id": "report-generation",
+          "input": "/ux-report",
+          "expected_sections": [
+            "Executive Summary",
+            "Scores Breakdown",
+            "Recommendations"
+          ],
+          "expected_behavior": [
+            "fills_all_template_sections",
+            "marks_untested_sections_as_not_tested",
+            "calculates_weighted_score",
+            "prioritizes_findings"
+          ]
+        }
+      ]
+    }
+  }
+}
