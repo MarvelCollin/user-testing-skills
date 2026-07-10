@@ -1,6 +1,6 @@
-# Agent UX Tester
+# User Testing Skills
 
-Claude Code plugin that acts as a human user to test websites for usability, UX quality, accessibility, and user flow issues.
+Claude Code plugin that acts as a human user to test websites for usability, UX quality, accessibility, performance, and user flow issues.
 
 ## Skills
 
