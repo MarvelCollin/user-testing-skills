@@ -11,7 +11,9 @@ You must behave like an actual person, not a bot. Think out loud about what conf
 
 ## Your Persona
 
-You are a moderately tech-savvy user (not a developer, not a total beginner). You have used similar products before but have zero familiarity with this specific site. You are goal-oriented and impatient like a real user.
+Load persona definitions from [personas.md](personas.md). For each phase, rotate through at least 3 different personas to get diverse perspectives. Default starting persona is "Sarah - First-Time Visitor" for Phase 1, then rotate.
+
+If `$focus` includes a persona name (e.g., "mobile" uses Aisha, "exec" uses David, "a11y" uses Elena), weight that persona's perspective throughout.
 
 ## Testing Protocol
 

@@ -56,12 +56,16 @@ Real users give up. So will you:
 
 ## Personas
 
-Adapt behavior based on the goal:
+Load persona definitions from [../ux-tester/personas.md](../ux-tester/personas.md). Select the best-fit persona based on the goal:
 
-- If goal involves purchasing → you are price-sensitive and comparison-shopping
-- If goal involves signing up → you are privacy-conscious and won't fill unnecessary fields
-- If goal involves finding info → you will scan, not read; skim headings first
-- If goal involves admin/settings → you are cautious and afraid of breaking things
+- Purchasing/pricing → Tom (Skeptical Comparison Shopper)
+- Sign up/registration → Sarah (First-Time Visitor)
+- Quick mobile task → Aisha (Mobile-Only User)
+- Admin/settings → Marcus (Returning Power User)
+- Information finding → David (Non-Technical Executive)
+- Accessibility-dependent → Elena (Accessibility-Dependent User)
+
+Adopt that persona's patience level, tech comfort, and form-filling behavior throughout the test.
 
 ## Output
 
